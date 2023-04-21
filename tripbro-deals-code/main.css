@@ -1,0 +1,395 @@
+/* 
+// tried scss but it did'nt work
+ * {
+//     box-sizing: border-box;
+//     margin: 0;
+//   }
+  
+//   .section-1 {
+//     background-image: url(./image/background-image.png);
+//     background-size: cover;
+//     height: 64vh;
+//     padding: 50px;
+//     position: relative;
+  
+//     .site-logo {
+//       img {
+//         width: 9rem;
+//       }
+//     }
+  
+//     .rectangle-container {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       position: absolute;
+//       bottom: 50px;
+//       right: 50px;
+  
+//       .image-data {
+//         position: absolute;
+//         bottom: 37px;
+//         left: 78px;
+//         h3 {
+//           color: white;
+//           font-size: 30px;
+//         }
+//       }
+//     }
+  
+//     .rectangle-image {
+//       position: relative;
+//     }
+  } */
+
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.section-1 {
+    background-image: url(./image/background-image.png);
+    background-size: cover;
+    height: 64vh;
+    padding: 50px;
+    position: relative;
+}
+
+.site-logo img {
+    width: 9rem;
+}
+
+.rectangle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: -5px;
+    right: 50px;
+}
+
+.image-data {
+    position: absolute;
+    bottom: 37px;
+    left: 78px;
+}
+
+.rectangle-image {
+    position: relative;
+}
+
+.image-data h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.first-contain h1 {
+    color: #00A859;
+}
+
+.first-contain p {
+    color: #8B8B8B;
+}
+
+.div-1-data-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-contain h1 {
+    background-color: #7106B4;
+    color: white;
+    padding: 6px;
+    border-radius: 8px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-1-data-2 button {
+    color: white;
+    background-color: #00A859;
+    border: 1px solid #00A859;
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.div-1 {
+    width: 100%;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* three columns of equal width */
+    /* grid-template-rows: repeat(4, 1fr); four rows of equal height */
+    gap: 30px; /* space between each grid item */
+    max-width: 1200px; /* optional: set a maximum width for the grid */
+    margin: 0 auto; /* optional: center the grid horizontally */
+  }
+
+  .div-1-data-1 span {
+    font-size: 16px;
+}
+
+/* .footer-container {
+    border-top: 0;
+    background: #333 url(https://cdn.tripxoxo.com/skin/frontend/smartwave/porto_child/images/pattern.png) repeat 0 0;
+} */
+
+.section-3 {
+    background: #333 url(./image/footer-image.png) repeat 0 0;
+    z-index: 99;
+    position: relative;
+}
+
+.achivement h1 {
+    color: #fdf7ac;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.footer-container {
+    padding: 15px 100px 15px 100px;
+}
+
+.achivement-images img {
+    margin-right: 4%;
+    padding: 10px;
+}
+
+.achivement {
+    padding-bottom: 45px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.links-section {
+    padding-top: 40px;
+}
+
+.links-section {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+.links-conrtainer h1 {
+    color: #fdf7ac;
+    font-weight: 200;
+    padding: 10px 0;
+    display: block;
+    line-height: 15px;
+    display: flex;
+    font-size: 16px;
+    gap: 10px;
+    align-items: center;
+}
+
+.conatiner1 h2 {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0 10px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.conatiner2 h3 {
+    font-size: 16px;
+    line-height: inherit;
+    color: #fff;
+    text-transform: none;
+    margin: 5px 0 10px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.conatiner1 {
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.conatiner2 {
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.container3 {
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.conatiner4 {
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.container4 {
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.container3 h3 {
+    font-size: 16px;
+    line-height: inherit;
+    color: #fff;
+    text-transform: none;
+    margin: 5px 0 10px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.container4 h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #fdf7ac;
+}
+
+.links-conrtainer ion-icon.md.hydrated {
+    font-size: 30px;
+    padding-top: 0px;
+}
+
+img#size-reduce {
+    width: 5rem;
+}
+
+.icon-section ion-icon.md.hydrated {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.icon-section {
+    padding-top: 30px;
+    gap: 11px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    text-align: center;
+    color: #777;
+    font-size: 11px;
+    padding-top: 13px;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        padding: 10px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .links-section{
+        flex-direction: column;
+    }
+    .conatiner1 {
+        margin-bottom: 0px;
+    }
+    .conatiner2 {
+        margin-bottom: 0px;
+    }
+    .container3 {
+        margin-bottom: 0px;
+    }
+    .container4 {
+        margin-bottom: 0px;
+    }
+    .image-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .payment-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rectangle-container {
+        right: 0px;
+    }
+    .section-1 {
+        background-position: 53%;
+    }
+    .achivement-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+  /* about us css */
+
+  section.about.us {
+    padding: 20px 100px 70px 100px;
+}
+
+.title h3 {
+    padding-bottom: 10px;
+}
+
+/* faq page */
+
+.title h1 {
+    color: #3f4658;
+    font-size: 20px;
+    margin: 0 0 15px;
+    line-height: 1.35;
+}
+
+.q p {
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 11px;
+    color: #777;
+}
+
+.a p {
+    color: #777777;
+    font-size: 11px;
+}
+
+section.faq {
+    padding: 20px 100px 70px 100px;
+}
