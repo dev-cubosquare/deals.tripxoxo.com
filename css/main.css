@@ -1,46 +1,12 @@
-/* 
-// tried scss but it did'nt work
- * {
-//     box-sizing: border-box;
-//     margin: 0;
-//   }
-  
-//   .section-1 {
-//     background-image: url(../img/background-image.png);
-//     background-size: cover;
-//     height: 64vh;
-//     padding: 50px;
-//     position: relative;
-  
-//     .site-logo {
-//       img {
-//         width: 9rem;
-//       }
-//     }
-  
-//     .rectangle-container {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       position: absolute;
-//       bottom: 50px;
-//       right: 50px;
-  
-//       .image-data {
-//         position: absolute;
-//         bottom: 37px;
-//         left: 78px;
-//         h3 {
-//           color: white;
-//           font-size: 30px;
-//         }
-//       }
-//     }
-  
-//     .rectangle-image {
-//       position: relative;
-//     }
-  } */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
 
 
 * {
@@ -54,6 +20,7 @@
     height: 64vh;
     padding: 50px;
     position: relative;
+    background-position: center;
 }
 
 .site-logo img {
@@ -71,8 +38,10 @@
 
 .image-data {
     position: absolute;
-    bottom: 37px;
-    left: 78px;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .rectangle-image {
@@ -130,7 +99,10 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
     /* three columns of equal width */
     /* grid-template-rows: repeat(4, 1fr); four rows of equal height */
     gap: 30px;
@@ -139,10 +111,15 @@
     /* optional: set a maximum width for the grid */
     margin: 0 auto;
     /* optional: center the grid horizontally */
+    padding: 50px 25px;
 }
 
 .div-1-data-1 span {
     font-size: 16px;
+}
+
+.div-1-image img {
+    width: 100%;
 }
 
 /* .footer-container {
@@ -172,9 +149,20 @@
     padding: 10px;
 }
 
+.achivement-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .achivement {
     padding-bottom: 45px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 1400px;
+    margin: auto;
+    max-width: 90%;
+
 }
 
 .links-section {
@@ -186,6 +174,16 @@
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 1400px;
+    margin: auto;
+    max-width: 90%;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 935px) {
+    .links-section {
+        flex-direction: column;
+    }
 }
 
 
@@ -308,6 +306,14 @@ img#size-reduce {
 .image-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 935px) {
+    .image-container {
+        flex-direction: column;
+    }
 }
 
 .copyright {
@@ -317,13 +323,21 @@ img#size-reduce {
     padding-top: 13px;
 }
 
+.payment-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-width: 480px) {
     .footer-container {
         padding: 10px;
     }
 
     .grid-container {
-        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: repeat(1, 1fr); */
     }
 
     .links-section {
@@ -346,18 +360,18 @@ img#size-reduce {
         margin-bottom: 0px;
     }
 
-    .image-container {
+    /* .image-container {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
-    .payment-logo {
+    /* .payment-logo {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
     .rectangle-container {
         right: 0px;
@@ -376,8 +390,15 @@ img#size-reduce {
 
 /* about us css */
 
-section.about.us {
+/* section.about.us {
     padding: 20px 100px 70px 100px;
+} */
+
+main {
+    padding: 20px 0 70px;
+    max-width: 1440px;
+    margin: auto;
+    width: 90%;
 }
 
 .title h3 {
@@ -396,13 +417,13 @@ section.about.us {
 .q p {
     font-weight: bold;
     line-height: 1.5;
-    font-size: 11px;
+    /* font-size: 11px; */
     color: #777;
 }
 
 .a p {
     color: #777777;
-    font-size: 11px;
+    /* font-size: 11px; */
 }
 
 section.faq {
