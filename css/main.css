@@ -6,7 +6,7 @@
 //   }
   
 //   .section-1 {
-//     background-image: url(./image/background-image.png);
+//     background-image: url(../img/background-image.png);
 //     background-size: cover;
 //     height: 64vh;
 //     padding: 50px;
@@ -43,13 +43,13 @@
   } */
 
 
-  * {
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
 .section-1 {
-    background-image: url(./image/background-image.png);
+    background-image: url(../img/background-image.png);
     background-size: cover;
     height: 64vh;
     padding: 50px;
@@ -126,18 +126,22 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-  }
+}
 
-  .grid-container {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* three columns of equal width */
+    grid-template-columns: repeat(3, 1fr);
+    /* three columns of equal width */
     /* grid-template-rows: repeat(4, 1fr); four rows of equal height */
-    gap: 30px; /* space between each grid item */
-    max-width: 1200px; /* optional: set a maximum width for the grid */
-    margin: 0 auto; /* optional: center the grid horizontally */
-  }
+    gap: 30px;
+    /* space between each grid item */
+    max-width: 1200px;
+    /* optional: set a maximum width for the grid */
+    margin: 0 auto;
+    /* optional: center the grid horizontally */
+}
 
-  .div-1-data-1 span {
+.div-1-data-1 span {
     font-size: 16px;
 }
 
@@ -147,7 +151,7 @@
 } */
 
 .section-3 {
-    background: #333 url(./image/footer-image.png) repeat 0 0;
+    background: #333 url(../img/footer-image.png) repeat 0 0;
     z-index: 99;
     position: relative;
 }
@@ -170,7 +174,7 @@
 
 .achivement {
     padding-bottom: 45px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .links-section {
@@ -181,7 +185,7 @@
     padding-top: 40px;
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 
@@ -317,51 +321,62 @@ img#size-reduce {
     .footer-container {
         padding: 10px;
     }
+
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .links-section{
+
+    .links-section {
         flex-direction: column;
     }
+
     .conatiner1 {
         margin-bottom: 0px;
     }
+
     .conatiner2 {
         margin-bottom: 0px;
     }
+
     .container3 {
         margin-bottom: 0px;
     }
+
     .container4 {
         margin-bottom: 0px;
     }
+
     .image-container {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
     }
+
     .payment-logo {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .rectangle-container {
         right: 0px;
     }
+
     .section-1 {
         background-position: 53%;
     }
+
     .achivement-images {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-  }
+}
 
-  /* about us css */
+/* about us css */
 
-  section.about.us {
+section.about.us {
     padding: 20px 100px 70px 100px;
 }
 
